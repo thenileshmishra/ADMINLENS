@@ -1,3 +1,4 @@
+// session tracking
 const mongoose = require('mongoose');
 
 const activeSessionSchema = new mongoose.Schema({
@@ -13,6 +14,7 @@ const activeSessionSchema = new mongoose.Schema({
     type: Date,
     required: true,
     default: Date.now,
+
   },
 });
 
